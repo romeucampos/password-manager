@@ -70,9 +70,9 @@ class Data:
         print(
             f'{"-"*40}\n'
             f'o: opções\n'
-            f'l: listar servições registrados\n'
+            f'l: listar serviços registrados\n'
             f'v: visualizar a senha\n'
-            f'i: inseri\n'
+            f'i: inseri serviço\n'
             f's: sair\n'
             f'{"-"*40}\n'
             )
@@ -80,7 +80,7 @@ class Data:
     def main(self):
         
         if data.login():
-            print('senha correta\n')
+            print('senha correta!\n')
 
             while True:     
 
@@ -92,7 +92,7 @@ class Data:
                 except Exception as e:
                     print('essa opçãos não existe')
         else:
-            print('senha incorreta')
+            print('senha incorreta!\n')
 
 
 if __name__ == '__main__':
